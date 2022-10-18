@@ -1,0 +1,74 @@
+**SQL
+To create a data base we have to use 
+CREATE TABLE queary.(CREATE TABLE Student;)
+
+USE student;\\to use the created database.
+
+CREATE TABLE Student info
+  (
+   studentiD int,
+   student name varchar(8000),
+    dateofbirth DATE
+  );
+to drop the table we have to use//DROP TABLE STUDENT INFO
+
+The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+ The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+**ALTER TABLE student info;
+ALTER TABLE student info Add Blood Group varchar(8000);
+**
+NOT NULL:-
+The NOT NULL constraint enforces a column to NOT accept NULL values. This enforces a field to always contain a value, 
+which means that you cannot insert a new record, or update a record without adding a value to this field.
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(2554) NOT NULL,
+    FirstName varchar(2535) NOT NULL,
+    Age int
+);
+UNIQUE:-
+SQL UNIQUE Constraint
+The UNIQUE constraint ensures that all values in a column are different.
+
+Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns.
+
+A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+
+However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.
+
+QUIRES:-
+CREATE TABLE Persons (
+    ID int NOT NULL UNIQUE,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int
+);
+CHECK:-
+The CHECK constraint is used to limit the value range that can be placed in a column.
+
+If you define a CHECK constraint on a column it will allow only certain values for this column.
+
+If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.
+QUIRES:-
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CHECK (Age>=18)
+);
+INDEX:-
+The CREATE INDEX statement is used to create indexes in tables.
+
+INSERT INTO command use to inserting the some info
+** INSERT
+ INTO student values('ripon','11.09.1999',india)
+****
+UPDATEstudent info
+SET studentname='Diptesh'
+where studentID=1;
+********
+DELETE Oparation
+DELETE FROM student into where student name='Diptesh'
+
+
