@@ -1,0 +1,29 @@
+1st we have to create a database
+the create a table for employe
+then insert data in that table 
+(
+empid int,
+empName varchar(30),
+deptid int,
+sId int
+);
+then insart values here
+then we have to create table for depermant
+(
+deptId int,
+deptName varchar(50)
+);
+insert data here,
+salary
+(
+sid int,
+salary float
+);
+
+SELECT empName,deptName,salary
+FROM employe
+INNER JOIN employe_deperment
+  ON employe.deptid = deperment.deptid
+INNER JOIN salary
+  ON employe.sid = salary.sid;
+WHERE SALARY>=10000;
